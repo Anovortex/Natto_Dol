@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: fefdf9;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nattodol.ActorsHomeScreen">
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="20.0" layoutY="70.0" text="Welcome Actors! ">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="Logout" layoutX="112.0" layoutY="338.0" mnemonicParsing="false" onAction="#UserLogout" text="Log out " />
+            </children>
+        </AnchorPane>
+    </right>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="UpdateShows" layoutX="74.0" layoutY="68.0" mnemonicParsing="false" onAction="#UpdateOnShows" text="New Shows Updates" />
+                <Button fx:id="CScript" layoutX="74.0" layoutY="103.0" mnemonicParsing="false" onAction="#Cscript" text="Check Script" />
+                <Button fx:id="RehearsalTime" layoutX="74.0" layoutY="139.0" mnemonicParsing="false" onAction="#RehearsalTiming" text="Rehearsal Times " />
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
